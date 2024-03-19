@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="150.0" minWidth="350.0" prefHeight="480.0" prefWidth="640.0" spacing="10" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ConnessioneController">
+   <StackPane prefHeight="215.0" prefWidth="208.0" styleClass="body" stylesheets="@../style.css">
+      <AnchorPane id="logoImageView" prefHeight="400.0" prefWidth="300.0" stylesheets="@../style.css" />
+   </StackPane>
+   <AnchorPane prefHeight="400.0" prefWidth="300.0" stylesheets="@../style.css" HBox.hgrow="ALWAYS">
+      <Text fill="#ae0000" layoutX="10.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Connessione" underline="true" wrappingWidth="269.0" AnchorPane.bottomAnchor="407.736328125">
+         <font>
+            <Font name="Consolas Bold" size="36.0" />
+         </font>
+      </Text>
+      <Text fill="#ae0000" layoutX="10.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Indirizzo IP:" wrappingWidth="150.0" AnchorPane.bottomAnchor="372.3681640625" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+         <font>
+            <Font name="Consolas Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#ae0000" layoutX="10.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numero Porta:" wrappingWidth="150.0" AnchorPane.bottomAnchor="297.3681640625" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="140.0">
+         <font>
+            <Font name="Consolas Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="IpTextField1" layoutX="10.0" layoutY="120.0" prefHeight="26.0" prefWidth="321.0" promptText="127.0.0.1" AnchorPane.bottomAnchor="334.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+      <TextField fx:id="PortTextField1" layoutX="10.0" layoutY="200.0" prefHeight="26.0" prefWidth="321.0" promptText="8080" AnchorPane.bottomAnchor="254.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+      <Button fx:id="ConnectButton1" layoutX="5.0" layoutY="266.0" mnemonicParsing="false" onMouseClicked="#handleConnectButton" prefHeight="30.0" style="-fx-background-color: #ae0000;" text="Connetti" textFill="WHITE" AnchorPane.bottomAnchor="184.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="15.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="DefaultButton1" layoutX="5.0" layoutY="305.0" mnemonicParsing="false" onAction="#handleDefaultButton" prefHeight="30.0" style="-fx-background-color: #ae0000;" text="Default" textFill="WHITE" AnchorPane.bottomAnchor="145.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="15.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </AnchorPane>
+   <StackPane prefHeight="215.0" prefWidth="208.0" styleClass="body" stylesheets="@../style.css">
+         <AnchorPane id="logoImageView" prefHeight="400.0" prefWidth="300.0" stylesheets="@../style.css" />
+   </StackPane>
+</HBox>
